@@ -9,28 +9,20 @@ let styles = StyleSheet.create({
 @react.component
 let make = () => {
   let value = React.useRef(Animated.Value.create(1.))
-
   let startAnimation = () => {
-    let animation = Animated.timing(
-      value.current,
-      Animated.Value.Timing.config(
-        ~toValue=0.0->Animated.Value.Timing.fromRawValue,
-        ~duration=1500.0,
-        ~useNativeDriver=false,
-        (),
-      ),
-    )
-    animation->Animated.start(~endCallback=_ => {
-      let animation = Animated.timing(
+    let createAnimation = (val: float) => {
+      Animated.timing(
         value.current,
         Animated.Value.Timing.config(
-          ~toValue=1.0->Animated.Value.Timing.fromRawValue,
+          ~toValue=val->Animated.Value.Timing.fromRawValue,
           ~duration=1500.0,
           ~useNativeDriver=false,
           (),
         ),
       )
-      animation->Animated.start()
+    }
+    0.0->createAnimation->Animated.start(~endCallback=_ => {
+      1.1->createAnimation->Animated.start()
     }, ())
   }
 

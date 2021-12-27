@@ -26,18 +26,15 @@ function Opacity(Props) {
               style: styles.container,
               children: React.createElement(ReactNative.TouchableOpacity, {
                     onPress: (function (param) {
-                        var animation = Animated$ReactNative.timing(value.current, {
-                              toValue: 0.0,
-                              duration: 1500.0,
-                              useNativeDriver: false
-                            });
-                        return Animated$ReactNative.start(animation, (function (param) {
-                                      var animation = Animated$ReactNative.timing(value.current, {
-                                            toValue: 1.0,
-                                            duration: 1500.0,
-                                            useNativeDriver: false
-                                          });
-                                      return Animated$ReactNative.start(animation, undefined, undefined);
+                        var createAnimation = function (val) {
+                          return Animated$ReactNative.timing(value.current, {
+                                      toValue: val,
+                                      duration: 1500.0,
+                                      useNativeDriver: false
+                                    });
+                        };
+                        return Animated$ReactNative.start(createAnimation(0.0), (function (param) {
+                                      return Animated$ReactNative.start(createAnimation(1.1), undefined, undefined);
                                     }), undefined);
                       }),
                     children: React.createElement(Animated$ReactNative.View.make, {
