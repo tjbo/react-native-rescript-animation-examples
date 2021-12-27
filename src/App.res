@@ -2,5 +2,9 @@ open ReactNative
 
 @react.component
 let app = () => {
-  <SafeAreaView> <StatusBar /> <Opacity /> </SafeAreaView>
+  <SafeAreaView>
+    <StatusBar />
+    // <Opacity />
+    <TranslatePosition />
+  </SafeAreaView>
 }
