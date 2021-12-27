@@ -1,0 +1,6 @@
+module Pods_animations_animationsTests {
+  umbrella header "Pods-animations-animationsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
