@@ -5,6 +5,8 @@ let app = () => {
   <SafeAreaView>
     <StatusBar />
     // <Opacity />
-    <TranslatePosition />
+    // <TranslatePosition />
+    <Interpolation />
+    // <Scale />
   </SafeAreaView>
 }
