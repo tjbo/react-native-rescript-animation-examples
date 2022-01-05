@@ -11,6 +11,8 @@ let app = () => {
     // <ScrollEvent />
     // <Add />
     // <Parallel />
-    <Sequence />
+    //<Sequence />
+    // <Stagger />
+    <Delay />
   </SafeAreaView>
 }
