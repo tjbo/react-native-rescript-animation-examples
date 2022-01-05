@@ -13,6 +13,7 @@ let app = () => {
     // <Parallel />
     //<Sequence />
     // <Stagger />
-    <Delay />
+    // <Delay />
+    <InterpolatedInterpolate />
   </SafeAreaView>
 }
