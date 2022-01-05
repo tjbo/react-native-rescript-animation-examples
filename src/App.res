@@ -8,6 +8,7 @@ let app = () => {
     // <TranslatePosition />
     // <Interpolation />
     // <Scale />
-    <ScrollEvent />
+    // <ScrollEvent />
+    <Panning />
   </SafeAreaView>
 }
