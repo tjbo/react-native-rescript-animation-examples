@@ -10,6 +10,7 @@ let app = () => {
     // <Scale />
     // <ScrollEvent />
     // <Add />
-    <Parallel />
+    // <Parallel />
+    <Sequence />
   </SafeAreaView>
 }
