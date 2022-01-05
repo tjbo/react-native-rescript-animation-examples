@@ -14,6 +14,7 @@ let app = () => {
     //<Sequence />
     // <Stagger />
     // <Delay />
-    <InterpolatedInterpolate />
+    // <InterpolatedInterpolate />
+    <Rotate />
   </SafeAreaView>
 }
