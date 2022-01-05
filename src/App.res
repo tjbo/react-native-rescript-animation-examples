@@ -9,6 +9,7 @@ let app = () => {
     // <Interpolation />
     // <Scale />
     // <ScrollEvent />
-    <Add />
+    // <Add />
+    <Parallel />
   </SafeAreaView>
 }
